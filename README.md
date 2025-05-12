@@ -46,5 +46,6 @@ After installing the package, you can use the command-line tool to quickly view 
 ```bash
 # Direct command-line usage
 show image.jpg
+```
 
 The command-line entry point is defined in the project's pyproject.toml, making it accessible from anywhere once installed.
