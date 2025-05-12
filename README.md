@@ -37,13 +37,7 @@ ax.text(10, 30, "Annotation", color='red')
 plt.show()
 ```
 
-The `show()` function is also added to Python builtins, so you can call it directly without importing:
-
-```python
-import cv2
-img = cv2.imread('image.jpg')
-show(img)  # Works without import
-```
+The `show()` function can be added to Python builtins by calling `cvdebug.install()`, allowing you to use it without importing:
 
 ## Command Line Usage
 
