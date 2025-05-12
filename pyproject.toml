@@ -1,0 +1,21 @@
+[project]
+name = "cvdebug"
+version = "0.1.0"
+description = "OpenCV debugging with matplotlib"
+readme = "README.md"
+authors = [{ name = "Philip Krejov", email = "krejov100@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["matplotlib>=3.10.3", "opencv-python>=4.11.0.86"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = ["cvdebug"]
+
+[tool.uv.sources]
+cvdebug = { workspace = true }
+
+[project.scripts]
+show = "cvdebug:show"
