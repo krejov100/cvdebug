@@ -9,7 +9,6 @@ def show(
     title: str = "Image",
     cmap: str | None = None,
     wait: bool = True,
-    block: bool = True,
 ):
     """
     Display an OpenCV image via matplotlib, auto-converting BGR→RGB.
@@ -32,7 +31,7 @@ def show(
     ax.axis("off")
     ax.imshow(img, cmap=cmap)
     if wait:
-        plt.show(block=block)
+        plt.show()
     else:
         return fig, ax
 
